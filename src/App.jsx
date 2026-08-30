@@ -1,8 +1,14 @@
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+
 function App() {
   return (
-    <main>
-      <h1>Disco Salon</h1>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
 
