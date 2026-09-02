@@ -1,22 +1,52 @@
-import faceWomanImage from "../assets/facewoman.jpg";
-import wineHairImage from "../assets/winehair.jpg";
-import pinkGirlImage from "../assets/pinkgirl.jpg";
-
 const artists = [
   {
-    name: "Artist One",
-    role: "Stylist & Colorist",
-    image: faceWomanImage,
+    name: "Bit",
+    pronouns: "She/Her",
+    role: "Owner · Stylist · Educator",
+    description:
+      "With nearly 20 years of experience, Bit is a stylist, educator, and consultant who has taught stylists across North America and worked backstage at New York Fashion Week.",
   },
   {
-    name: "Artist Two",
-    role: "Color Specialist",
-    image: wineHairImage,
+    name: "Yoshi",
+    pronouns: "He/Him",
+    role: "Owner · Stylist",
+    description:
+      "With 19 years behind the chair, Yoshi specializes in fine hair and loves creating lived-in, natural colors and balayage looks.",
   },
   {
-    name: "Artist Three",
+    name: "Maddy",
+    pronouns: "She/Her",
+    role: "Stylist · Blonde Specialist",
+    description:
+      "Maddy loves all things blonde, from highlights to balayage, and creating bright, beautiful looks for her clients.",
+  },
+  {
+    name: "Rose",
+    pronouns: "She/Her",
     role: "Stylist",
-    image: pinkGirlImage,
+    description:
+      "Rose thrives on creativity and loves a good challenge, from lived-in color to turning a client's vision into their perfect finished look.",
+  },
+  {
+    name: "Katie",
+    pronouns: "She/Her",
+    role: "Stylist · Texture Specialist",
+    description:
+      "After 23 years in the industry, Katie is all about texture — creating it where none exists and bringing out the beauty of natural waves and curls.",
+  },
+  {
+    name: "Aly",
+    pronouns: "They/Them",
+    role: "Stylist · Gender-Affirming Hair",
+    description:
+      "Aly creates bold, gender-affirming styles that are low-maintenance but high impact, with a passion for non-traditional looks.",
+  },
+  {
+    name: "Kat",
+    pronouns: "She/Her",
+    role: "Stylist · Color Specialist",
+    description:
+      "Kat loves transforming shorter hair, tackling color corrections, bleach-and-tones, and creating stunning redhead looks.",
   },
 ];
 
@@ -27,50 +57,47 @@ function Team() {
       className="bg-[#171512] px-6 py-24 text-[#f3eadc] md:px-10 md:py-32 lg:px-14"
     >
       <div className="mx-auto max-w-7xl">
-        {/* Heading */}
-        <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div className="mb-16 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-5 text-xs uppercase tracking-[0.3em] text-[#b99a78]">
               Meet the artists
             </p>
 
-            <h2 className="font-serif text-5xl leading-none md:text-6xl lg:text-7xl">
+            <h2 className="font-serif text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
               The people
               <br />
-              behind the hair.
+              behind Disco.
             </h2>
           </div>
 
-          <p className="max-w-md text-sm leading-7 text-white/60">
-            Great hair starts with great people. Our artists bring their own
-            perspective, creativity, and personality to every appointment.
+          <p className="max-w-md text-sm leading-7 text-white/55">
+            A team of experienced artists with their own specialties,
+            perspectives, and approach to creating great hair.
           </p>
         </div>
 
-        {/* Artists */}
-        <div className="grid gap-6 md:grid-cols-3">
-          {artists.map((artist) => (
-            <article key={artist.name} className="group">
-              <div className="overflow-hidden">
-                <img
-                  src={artist.image}
-                  alt={artist.name}
-                  className="h-[430px] w-full object-cover transition duration-700 group-hover:scale-105 md:h-[500px]"
-                />
+        <div className="grid border-l border-t border-white/15 sm:grid-cols-2 lg:grid-cols-3">
+          {artists.map((artist, index) => (
+            <article
+              key={artist.name}
+              className="group min-h-[300px] border-b border-r border-white/15 p-7 transition hover:bg-white/[0.04] md:p-8"
+            >
+              <div className="flex items-start justify-between">
+                <span className="text-xs text-white/30">0{index + 1}</span>
+
+                <span className="text-xs text-white/30">{artist.pronouns}</span>
               </div>
 
-              <div className="mt-5 flex items-start justify-between border-b border-white/15 pb-5">
-                <div>
-                  <h3 className="font-serif text-2xl">{artist.name}</h3>
+              <div className="mt-20">
+                <h3 className="font-serif text-4xl">{artist.name}</h3>
 
-                  <p className="mt-1 text-xs uppercase tracking-[0.12em] text-white/45">
-                    {artist.role}
-                  </p>
-                </div>
+                <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-[#b99a78]">
+                  {artist.role}
+                </p>
 
-                <span className="text-xl text-white/40 transition group-hover:text-white">
-                  ↗
-                </span>
+                <p className="mt-5 text-sm leading-6 text-white/50">
+                  {artist.description}
+                </p>
               </div>
             </article>
           ))}
