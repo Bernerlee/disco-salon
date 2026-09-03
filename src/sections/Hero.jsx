@@ -40,7 +40,7 @@ function Hero() {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="#booking"
+              href="#services"
               className="bg-[#f3e7d3] px-7 py-4 text-xs font-semibold uppercase tracking-[0.12em] text-black transition hover:bg-white"
             >
               Book Your Appointment
