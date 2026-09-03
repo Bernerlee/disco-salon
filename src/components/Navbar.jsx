@@ -142,7 +142,7 @@ function Navbar() {
 
             {/* Mobile Book button */}
             <a
-              href="#booking"
+              href="#services"
               onClick={closeMenu}
               className="mt-8 inline-flex w-full items-center justify-center bg-white px-6 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-black transition hover:bg-white/80"
             >

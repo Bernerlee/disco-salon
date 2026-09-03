@@ -35,7 +35,7 @@ function BookingCTA() {
         </p>
 
         <a
-          href="#"
+          href="#services"
           className="mt-9 inline-flex bg-[#f3eadc] px-8 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-[#171512] transition hover:bg-white"
         >
           Book Your Appointment
