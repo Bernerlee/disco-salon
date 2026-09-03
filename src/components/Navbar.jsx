@@ -73,7 +73,7 @@ function Navbar() {
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="relative z-50 flex flex-col gap-1.5 lg:hidden"
+            className="relative z-50 flex flex-col gap-1.5 lg:hidden cursor-pointer"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
           >
