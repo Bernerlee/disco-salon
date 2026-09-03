@@ -9,16 +9,21 @@ function Footer() {
         <div className="grid gap-14 border-b border-white/15 pb-16 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <p className="font-serif text-5xl tracking-[0.03em]">DISCO</p>
-
-            <p className="mt-1 text-[9px] tracking-[0.4em]">SALON</p>
+            <img
+              src="/disco-logo.png"
+              alt="Disco Salon"
+              className="h-auto w-48"
+            />
 
             <p className="mt-8 max-w-xs text-sm leading-7 text-white/50">
-              Good hair. Good vibes. A creative salon in the heart of Atlanta.
+              A creative salon in the heart of Atlanta, creating hair with
+              personality, intention, and a little bit of disco.
             </p>
 
             <a
-              href="#booking"
+              href="https://booking.mangomint.com/discosalon?serviceId=25"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-7 inline-flex border border-[#f3eadc] px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] transition hover:bg-[#f3eadc] hover:text-[#171512]"
             >
               Book Now
@@ -32,13 +37,17 @@ function Footer() {
             </h3>
 
             <address className="not-italic text-sm leading-7 text-white/70">
-              638 Glenwood Ave SE
+              638 Glenwood Ave SE Apt B
               <br />
               Atlanta, GA 30312
+              <br />
+              United States
             </address>
 
             <a
-              href="#"
+              href="https://www.google.com/maps/search/?api=1&query=Disco+Salon+638+Glenwood+Ave+SE+Atlanta+GA+30312"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-block text-xs uppercase tracking-[0.12em] text-[#f3eadc]"
             >
               Get Directions →
@@ -51,19 +60,19 @@ function Footer() {
               Contact
             </h3>
 
-            <div className="space-y-3 text-sm text-white/70">
+            <div className="space-y-4 text-sm text-white/70">
               <a
-                href="tel:+14045550123"
+                href="tel:+14705895487"
                 className="block transition hover:text-white"
               >
-                (404) 555-0123
+                +1 470 589 5487
               </a>
 
               <a
-                href="mailto:hello@disco.salon"
-                className="block transition hover:text-white"
+                href="mailto:discosalonatl@gmail.com"
+                className="block break-all transition hover:text-white"
               >
-                hello@disco.salon
+                discosalonatl@gmail.com
               </a>
             </div>
           </div>
@@ -75,9 +84,40 @@ function Footer() {
             </h3>
 
             <div className="space-y-2 text-sm leading-6 text-white/70">
-              <p>Mon — Fri &nbsp; 9am — 7pm</p>
-              <p>Saturday &nbsp; 9am — 5pm</p>
-              <p>Sunday &nbsp; Closed</p>
+              <div className="flex justify-between gap-5">
+                <span>Mon</span>
+                <span>Closed</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Tue</span>
+                <span>9am — 5pm</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Wed</span>
+                <span>9am — 5pm</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Thu</span>
+                <span>9am — 5pm</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Fri</span>
+                <span>9am — 5pm</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Sat</span>
+                <span>9am — 5pm</span>
+              </div>
+
+              <div className="flex justify-between gap-5">
+                <span>Sun</span>
+                <span>Closed</span>
+              </div>
             </div>
           </div>
         </div>
@@ -88,26 +128,28 @@ function Footer() {
             © 2026 Disco Salon. All rights reserved.
           </p>
 
-          <div className="flex gap-7">
+          <div className="flex flex-wrap gap-7">
             <a
-              href="#"
+              href="https://www.instagram.com/disco.salon.atl"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[10px] uppercase tracking-[0.15em] text-white/50 transition hover:text-white"
             >
               Instagram
             </a>
 
             <a
-              href="#"
+              href="mailto:discosalonatl@gmail.com"
               className="text-[10px] uppercase tracking-[0.15em] text-white/50 transition hover:text-white"
             >
-              Facebook
+              Email
             </a>
 
             <a
-              href="#"
+              href="tel:+14705895487"
               className="text-[10px] uppercase tracking-[0.15em] text-white/50 transition hover:text-white"
             >
-              Privacy
+              Call
             </a>
           </div>
         </div>
